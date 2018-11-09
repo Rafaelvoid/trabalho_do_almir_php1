@@ -13,10 +13,10 @@
 
     $_SESSION['user'] = $user; 
     
-    header('location:index1.html'); 
+    header('location:Principal.php'); 
 }
    else{ echo "Usuario e senha nâo coincidem";
 
-  // header('location: login.html');
+   header('location: login.html');
 }
 ?>

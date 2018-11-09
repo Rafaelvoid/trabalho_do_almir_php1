@@ -13,5 +13,5 @@ include("connection.php");
     else  echo ("Campos invalidos ");
     
 
-   header("location: lstProd.php");
+   header("location: Principal.php");
 ?>

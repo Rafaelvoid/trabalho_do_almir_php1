@@ -1,18 +1,17 @@
 <?php
 include("connection.php");
 
- $name = trim($_POST['txtNome']);
- $ende = trim($_POST['txtEnde']);
- $cidade = trim($_POST['txtCidade']);
- $email = trim($_POST['txtEmail']);
+ $user = trim($_POST['txtUser']);
+ $pwd = trim($_POST['txtpwd']);
+ $pwd = md5($pwd);
 
- if (!empty($name) && !empty($ende) && !empty($cidade) && !empty( $email)){
-     $sql = "INSERT INTO cliente (nome, endereco, cidade, email) VALUES ('$name', ' $ende', '$cidade','$email');";
+ if (!empty($name) && !empty($pwd)){
+     $sql = "INSERT INTO usuario (user, pwd) VALUES ('$user', '$pwd');";
      $ins = mysql_query($sql);
     
     }
     else  echo ("Campos invalidos ");
     
 
-   header("location: lstProd.php");
+  // header("location: login.html");
 ?>

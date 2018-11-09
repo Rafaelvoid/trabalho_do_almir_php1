@@ -16,5 +16,5 @@
 	
     }
     
-    header('location: lstProd.php');
+    header('location: Principal.php');
 ?>
